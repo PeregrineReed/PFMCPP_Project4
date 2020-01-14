@@ -91,7 +91,7 @@ float FloatType::divide( float lhs, float rhs )
     if (rhs == 0.f)
     {
         std::cout << "warning: Can't divide by 0." << std::endl;
-        return rhs;
+        return rhs; FIXME its perfectly fine to divide floating point numbers by 0.  Just warn, dont return rhs.
     }
     else
     {
@@ -127,7 +127,7 @@ double DoubleType::divide( double lhs, double rhs )
   if (rhs == 0.0)
   {
       std::cout << "warning: Can't divide by 0." << std::endl;
-      return rhs;
+      return rhs; FIXME its perfectly fine to divide floating point numbers by 0.  Just warn, dont return rhs.
   }
   else
   {
